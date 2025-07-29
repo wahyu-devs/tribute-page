@@ -213,3 +213,26 @@ header::after {
     transform: scale(1.0);
   }
 }
+
+/* Make the header sticky in the background */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* full screen */
+  z-index: -1; /* di belakang main content */
+}
+
+/* Create spacer so content doesn't go behind fixed header */
+.header-spacer {
+  height: 100vh; /* same as header height */
+}
+
+/* Add fade-out effect as main content scrolls over header */
+main {
+  position: relative;
+  background-color: #f4f4f4;
+  backdrop-filter: blur(1px);
+}
+
