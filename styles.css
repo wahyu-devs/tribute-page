@@ -155,23 +155,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  header {
-    height: 50vh;
-  }
 
-  .header-text h1 {
-    white-space: nowrap;
-  }
-
-  .header-text h3 {
-    white-space: nowrap;
-    font-size: 1.3rem;
-  }
-
-  
-}
 
 /* Zoom-out background animation */
 header::before {
@@ -282,5 +266,24 @@ main {
   to {
     opacity: 1;
     transform: translate(-50%, 0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  
+  .header-text h1 {
+    white-space: nowrap;
+  }
+
+  .header-text h3 {
+    white-space: nowrap;
+    font-size: 1.3rem;
+  }
+
+  header::before {
+    background-image: url("assets/header-bg-mobile.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
