@@ -102,12 +102,10 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) translateY(var(--text-shift, 0px));
+  transform: translate3d(-50%, calc(-50% + var(--text-shift, 0px)), 0);
   text-align: center;
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
-
-
 
 .header-text h1 {
   font-size: 3rem;
