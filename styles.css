@@ -272,6 +272,10 @@ main {
 /* Responsive */
 @media (max-width: 600px) {
   
+  header {
+    height: 100svh;
+  }
+
   .header-text h1 {
     white-space: nowrap;
   }
