@@ -46,10 +46,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* Container */
 .container {
   width: 90%;
@@ -153,6 +149,8 @@ footer {
   padding: 2rem 0;
   text-align: center;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 1000;
 }
 
 
@@ -217,10 +215,11 @@ main {
   position: relative;
   background-color: #f4f4f4;
   backdrop-filter: blur(1px);
+  z-index: 1000;
 }
 
 .scroll-indicator {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
