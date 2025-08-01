@@ -117,7 +117,7 @@ header {
 
 .header-text h1 {
   font-size: 7rem;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-family: "Bebas Neue", sans-serif;
 }
 
@@ -352,7 +352,7 @@ main {
   .header-text h1 {
     white-space: nowrap;
     font-size: 5rem;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
   .header-text h3 {
