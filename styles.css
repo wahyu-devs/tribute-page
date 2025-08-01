@@ -47,7 +47,7 @@ li {
 }
 
 ul {
-  padding-left: 1.5rem;
+  padding-left: 0;
   margin-bottom: 1rem;
 }
 
@@ -143,6 +143,10 @@ main p {
   margin-top: 1rem;
 }
 
+.tribute-link {
+  text-align: center;
+}
+
 /* Hidden Image */
 #img-div {
   height: 0;
@@ -160,6 +164,36 @@ main p {
 
 #img-caption {
   display: none;
+}
+
+.album-list li,
+.member-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.album-list img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.member-list img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.fun-facts {
+  padding-left: 1rem;
 }
 
 /* Footer */
