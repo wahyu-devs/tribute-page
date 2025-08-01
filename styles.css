@@ -207,7 +207,9 @@ footer {
   z-index: 1000;
 }
 
-
+.footer i.fa-heart {
+  color: red;
+}
 
 /* Zoom-out background animation */
 header::before {
