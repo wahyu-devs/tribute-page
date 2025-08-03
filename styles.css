@@ -118,12 +118,13 @@ header {
 .header-text h1 {
   font-size: 7rem;
   font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
 }
 
 .header-text h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* Main */
@@ -133,8 +134,9 @@ main {
 
 main h2 {
   margin: 2rem 0 1rem;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
 }
 
 main p {
@@ -357,7 +359,11 @@ main {
 
   .header-text h3 {
     white-space: nowrap;
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  main h2 {
+    font-size: 2.5rem;
   }
 
   header::before {
