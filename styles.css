@@ -116,13 +116,13 @@ header {
 
 
 .header-text h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
 }
 
 .header-text h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
 }
@@ -354,12 +354,12 @@ main {
 
   .header-text h1 {
     white-space: nowrap;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .header-text h3 {
     white-space: nowrap;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   main h2 {
