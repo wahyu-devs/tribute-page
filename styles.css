@@ -319,6 +319,16 @@ main {
   opacity: 0.8;
 }
 
+#parallax-header {
+  will-change: transform;
+}
+
+#header-text,
+#header-logo,
+.scroll-indicator {
+  will-change: transform, opacity;
+}
+
 /* Bouncing arrow animation */
 @keyframes bounce {
 
