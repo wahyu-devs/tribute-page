@@ -1,21 +1,10 @@
-const parallax = document.getElementById("parallax-header");
-const headerText = document.getElementById("header-text");
-const headerLogo = document.getElementById("header-logo");
-const scrollButton = document.querySelector(".scroll-indicator");
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
 
-let latestScrollY = 0;
-let ticking = false;
-
-function onScroll() {
-    latestScrollY = window.scrollY;
-    if (!ticking) {
-        requestAnimationFrame(updateParallax);
-        ticking = true;
-    }
-}
-
-function updateParallax() {
-    const scrollY = latestScrollY;
+    const parallax = document.getElementById("parallax-header");
+    const headerText = document.getElementById("header-text");
+    const headerLogo = document.getElementById("header-logo");
+    const scrollButton = document.querySelector(".scroll-indicator");
 
     // Background parallax
     parallax.style.setProperty("--scroll-y", scrollY * 0.4 + "px");
@@ -33,20 +22,20 @@ function updateParallax() {
     scrollButton.style.opacity = opacity;
 
     // Move text up
-    headerText.style.setProperty("--text-shift", `-${Math.min(scrollY * 0.2, 60)}px`);
+    const textShift = Math.min(scrollY * 0.2, 60);
+    headerText.style.setProperty("--text-shift", `-${textShift}px`);
 
     // Move logo up
-    headerLogo.style.setProperty("--logo-shift", `-${Math.min(scrollY * 0.15, 40)}px`);
+    const logoShift = Math.min(scrollY * 0.15, 40);
+    headerLogo.style.setProperty("--logo-shift", `-${logoShift}px`);
 
     // Move scroll button up
-    scrollButton.style.setProperty("--scroll-btn-shift", `${Math.min(scrollY * 0.1, 30)}px`);
+    const btnShift = Math.min(scrollY * 0.1, 30);
+    scrollButton.style.setProperty("--scroll-btn-shift", `${btnShift}px`);
 
     // Overlay opacity increase
     const overlayEnd = 400;
     let overlayOpacity = 0.3 + (scrollY / overlayEnd) * 0.4;
-    parallax.style.setProperty('--overlay-opacity', Math.min(overlayOpacity, 0.7));
-
-    ticking = false;
-}
-
-window.addEventListener("scroll", onScroll, { passive: true });
+    overlayOpacity = Math.min(overlayOpacity, 0.7);
+    parallax.style.setProperty('--overlay-opacity', overlayOpacity);
+});
